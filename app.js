@@ -46,4 +46,15 @@ function getFrequencies(array){
 	return data;
 }
 
+d3.select("#reset").on("click",()=>{
+	
+	d3.selectAll(".letter")
+	  .remove();
+	  
+	d3.select("#phrase")
+	  .text("");
+	 
+	d3.select("#count")
+	  .text("");
+});
 
