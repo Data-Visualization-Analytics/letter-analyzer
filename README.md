@@ -1,9 +1,9 @@
-# Data-Visualization-Analytics
-Letter Analyzer
+# Letter Analyzer
 
 This Application helps you analyze the frequency of letters used in any set of given phrases using D3 Visualizations.
 
-Example:
+Example:-
+
 Phrase 1:
 A chain is only as strong as its weakest link
 Visualization:
