@@ -5,15 +5,15 @@ d3.select("form").on("submit",()=>{
 	var text = input.property("value");
 
 	var letters = d3.select("#letters")
-					.selectAll(".letter")
-				.data(getFrequencies(text),(d)=>{
-					return d.character;
-				});
+			.selectAll(".letter")
+		.data(getFrequencies(text),(d)=>{
+			return d.character;
+		});
 				
 	letters
-			.classed("new", false)
-		  .exit()
-		  .remove();	
+		.classed("new", false)
+	  .exit()
+	  .remove();	
 	
 	letters
 		.enter()
@@ -47,7 +47,7 @@ function getFrequencies(array){
 }
 
 d3.select("#reset").on("click",()=>{
-	
+	console.log("Hi")
 	d3.selectAll(".letter")
 	  .remove();
 	  
